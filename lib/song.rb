@@ -4,7 +4,7 @@ class Song
  @@count = 0
  @@artists = []
  @@genres = []
- @@artist_count = 0
+ # @@artist_count = 0
  @@genre_count = {}
 
   def initialize(title, artist, genre)
@@ -16,7 +16,7 @@ class Song
       return "Already here!"
     else
       @@artists << artist
-      @@artist_count += 1
+      # @@artist_count += 1
     end
     if @@genres.include?(genre)
       @@genre_count[genre] += 1
