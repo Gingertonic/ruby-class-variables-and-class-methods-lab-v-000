@@ -16,12 +16,12 @@ class Song
     #   return "Already here!"
     # else
       @@artists << @artist
+      @@genres << genre
       # @@artist_count += 1
     # end
     if @@genres.include?(genre)
       @@genre_count[genre] += 1
     else
-      @@genres << genre
       @@genre_count[genre] = 1
     end
   end
