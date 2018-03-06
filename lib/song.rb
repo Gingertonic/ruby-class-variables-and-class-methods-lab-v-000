@@ -46,7 +46,7 @@ class Song
       if @@artists.include?(artist)
         @@artists.delete(artist)
       end
-    @@artists
     end
+    @@artists
   end
 end
