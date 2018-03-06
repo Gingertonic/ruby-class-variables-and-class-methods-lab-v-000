@@ -25,8 +25,8 @@ class Song
       @@genre_count[@genre] = 1
       # @@genres << genre
     end
-    if @@artist_count[@genre]
-      @@artist_count[@genre] += 1
+    if @@artist_count[@artist]
+      @@artist_count[@artist] += 1
     else
       @@artist_count[@artist] = 1
       # @@genres << genre
