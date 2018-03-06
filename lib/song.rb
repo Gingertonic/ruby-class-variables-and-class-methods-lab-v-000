@@ -1,9 +1,9 @@
 class Song
  attr_reader :name, :artist, :genre
 
- ARTISTS = Array.new
- GENRES = Array.new
  @@count = 0
+ @@artists = []
+ @@genres = []
  @@artist_count = 0
  @@genre_count = 0
 
@@ -15,13 +15,13 @@ class Song
     if ARTISTS.include?(artist)
       return "Already here!"
     else
-      ARTISTS << artist
+      @@artists << artist
       @@artist_count += 1
     end
     if GENRES.include?(genre)
       return "Already here!"
     else
-      GENRES << genre
+      @@genres << genre
       @@genre_count += 1
     end
   end
