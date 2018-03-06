@@ -3,7 +3,7 @@ class Song
 
  ARTISTS = Array.new
  GENRES = Array.new
- @@count
+ @@count = 0
  @@artist_count = 0
  @@genre_count = 0
 
