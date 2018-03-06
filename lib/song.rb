@@ -12,13 +12,13 @@ class Song
     @artist = artist
     @genre = genre
     @@count += 1
-    if ARTISTS.include?(artist)
+    if @@artists.include?(artist)
       return "Already here!"
     else
       @@artists << artist
       @@artist_count += 1
     end
-    if GENRES.include?(genre)
+    if @@genres.include?(genre)
       return "Already here!"
     else
       @@genres << genre
