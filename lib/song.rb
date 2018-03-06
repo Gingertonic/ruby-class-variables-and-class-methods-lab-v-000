@@ -42,12 +42,11 @@ class Song
   end
 
   def self.artists
-    unique_artists = []
     @@artists.each do |artist|
-      if !unique_artists.include?(artist)
-        unique_artists.delete(artist)
+      if @@artists.include?(artist)
+        @@artists.delete(artist)
       end
-    unique_artists
+    @@artists
     end
   end
 end
