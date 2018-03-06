@@ -21,11 +21,6 @@ class Song
     else
       GENRES << genre
       @@genre_count += 1
-    end
-    
-        
-        
-  end
-    
+    end    
   end
 end
