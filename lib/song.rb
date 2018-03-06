@@ -22,7 +22,7 @@ class Song
     if @@genre_count[@genre]
       @@genre_count[@genre] += 1
     else
-      @@genre_count[genre] = 1
+      @@genre_count[@genre] = 1
       # @@genres << genre
     end
   end
@@ -52,7 +52,7 @@ class Song
     # @@artists
   end
 
-  def genre.count
+  def genre_count
     @@genre_count
   end
 end
