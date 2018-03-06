@@ -51,4 +51,8 @@ class Song
     # end
     # @@artists
   end
+
+  def genre.count
+    @@genre_count
+  end
 end
