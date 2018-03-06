@@ -3,6 +3,7 @@ class Song
 
  ARTISTS = Array.new
  GENRES = Array.new
+ @@count
  @@artist_count = 0
  @@genre_count = 0
 
@@ -10,6 +11,7 @@ class Song
     @name = title
     @artist = artist
     @genre = genre
+    @@count += 1
     if ARTISTS.include?(artist)
       return "Already here!"
     else
