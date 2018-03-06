@@ -37,8 +37,8 @@ class Song
       if !unique_genres.include?(genre)
         unique_genres << genre
       end
-    unique_genres
     end
+    unique_genres
   end
 
   def self.artists
